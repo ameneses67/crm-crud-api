@@ -1,0 +1,32 @@
+{
+  "clientes": [
+    {
+      "nombre": "Juan Pérez",
+      "email": "juan@correo.com",
+      "telefono": "(555) 555-5555",
+      "empresa": "Juanito y Asociados",
+      "id": 1
+    },
+    {
+      "nombre": "Alfonso Meneses",
+      "email": "ameneses67@gmail.com",
+      "telefono": "(666) 666-6666",
+      "empresa": "AMA",
+      "id": 2
+    },
+    {
+      "nombre": "La Chilindrina",
+      "email": "chilindrina@lavecindad.com",
+      "telefono": "2224514786",
+      "empresa": "La vecindad del chavo",
+      "id": 3
+    },
+    {
+      "nombre": "Chavo del 8",
+      "email": "chavo@lavecindad.com",
+      "telefono": "1234123489",
+      "empresa": "La vecindad del chavo",
+      "id": 4
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/customer-support.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRM - JSONServer</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body class="min-h-screen bg-gray-200">
+    <div class="md:flex min-h-screen">
+      <aside class="bg-teal-600 p-10 text-white flex flex-col gap-6 md:gap-8">
+        <h1 class="uppercase text-2xl font-bold">CRM - JSONServer</h1>
+        <p>Administra tus Clientes con el CRM</p>
+        <nav class="flex flex-col">
+          <a
+            href="index.html"
+            class="block hover:bg-teal-900 hover:text-yellow-400 px-4 py-2"
+            >Clientes</a
+          >
+          <a
+            href="nuevo-cliente.html"
+            class="block hover:bg-teal-900 hover:text-yellow-400 px-4 py-2"
+            >Nuevo Cliente</a
+          >
+        </nav>
+      </aside>
+      <!--sidebar-->
+      <main id="main" class="px-2 py-8 w-full flex flex-col gap-8">
+        <h2 class="text-3xl font-bold text-center">Nuevo Cliente</h2>
+
+        <form
+          id="formulario"
+          class="bg-white p-4 sm:p-8 mx-auto max-w-md flex flex-col gap-4 rounded-lg"
+          method="POST"
+        >
+          <div class="flex flex-col gap-2">
+            <label class="text-sm font-semibold" for="nombre">Nombre:</label>
+            <input
+              class="rounded placeholder:text-gray-400"
+              id="nombre"
+              name="nombre"
+              type="text"
+              placeholder="Nombre Cliente"
+            />
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="text-sm font-semibold" for="email">Correo:</label>
+            <input
+              class="rounded placeholder:text-gray-400"
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Email Cliente"
+            />
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <label class="text-sm font-semibold" for="telefono"
+              >Teléfono:</label
+            >
+            <input
+              class="rounded placeholder:text-gray-400"
+              id="telefono"
+              name="telefono"
+              type="tel"
+              placeholder="Teléfono Cliente"
+            />
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <label class="text-sm font-semibold" for="empresa">Empresa:</label>
+            <input
+              class="rounded placeholder:text-gray-400"
+              id="empresa"
+              name="empresa"
+              type="text"
+              placeholder="Empresa Cliente"
+            />
+          </div>
+
+          <input
+            type="submit"
+            class="bg-teal-600 hover:bg-teal-900 w-full mt-5 p-2 text-white uppercase font-bold rounded cursor-pointer"
+            value="Agregar Cliente"
+          />
+        </form>
+      </main>
+    </div>
+
+    <script src="src/ts/nuevoCliente.ts" type="module"></script>
+  </body>
+</html>
